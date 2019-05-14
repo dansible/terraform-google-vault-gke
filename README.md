@@ -26,7 +26,7 @@ gcloud kms keys create vault-key --location global --keyring vault-keyring --pur
 
 ```hcl
 module "vault" {
-  source           = "git@github.com:dansible/terraform-google_gke_infra.git?ref=v0.5.1"
+  source           = "git@github.com:dansible/terraform-google-vault-gke.git?ref=v0.0.6"
   name             = "${var.team-name}"
   project          = "${var.project}"
   kms_keyring_name = "${var.keyring_name}"
